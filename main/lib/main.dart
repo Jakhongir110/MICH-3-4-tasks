@@ -83,6 +83,9 @@ class _CalculatorState extends State<Calculator> {
                   ? (_firstOperand! / secondOperand).toString()
                   : 'Error';
               break;
+            case '%':
+              _output = ((_firstOperand! * secondOperand)/100).toString();
+              break;
           }
           _input = '';
           _firstOperand = null;
